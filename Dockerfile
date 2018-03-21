@@ -1,4 +1,4 @@
-FROM hshar/ubuntunew1212
+FROM ubuntu
 
 ADD landingpage /var/www/html/
 
