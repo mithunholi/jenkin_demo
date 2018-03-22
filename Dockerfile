@@ -1,6 +1,6 @@
-FROM ubuntu
+FROM ecmithun/ubuntu
 
-ADD new /var/www/html/
+ADD https://github.com/mithunholi/jenkin_demo/tree/master/new  /var/www/html/
 
 
 
