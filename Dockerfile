@@ -1,6 +1,7 @@
 FROM ubuntu
 
 ADD new /var/www/html/
+RUN sudo yes y | docker system prune -a
 
 RUN service apache2 restart
 
