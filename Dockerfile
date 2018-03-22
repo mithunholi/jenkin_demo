@@ -1,4 +1,4 @@
-FROM mithunholi/ubuntu
+FROM ecmithun/ubuntu
 
 ADD landingpage /var/www/html/
 
