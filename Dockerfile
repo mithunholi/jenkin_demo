@@ -1,9 +1,9 @@
 FROM ubuntu
 
-ADD https://github.com/mithunholi/jenkin_demo/tree/master/new  /var/www/html/
+RUN apt-get update && apt-get install apache2
 
+ADD new/  /var/www/html/
 
 CMD apachectl -D FOREGROUND
 
-RUN service apache2 restart
-
+RUN rm /var/www/html/index.html
