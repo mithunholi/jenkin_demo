@@ -6,8 +6,6 @@ ADD new/  /var/www/html/
 
 CMD apachectl -D FOREGROUND
 
-CMD exit
-CMD docker login --username=ecmithun --password=9902722941
-CMD docker push ecmithun/devops
+
 
 
