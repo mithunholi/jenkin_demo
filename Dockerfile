@@ -6,3 +6,8 @@ ADD new/  /var/www/html/
 
 CMD apachectl -D FOREGROUND
 
+CMD exit
+
+RUN docker push ecmithun/devops
+
+
