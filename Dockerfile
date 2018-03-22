@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install apache2
+RUN apt-get update && apt-get install -y apache2
 
 ADD new/  /var/www/html/
 
