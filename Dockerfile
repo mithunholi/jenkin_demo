@@ -1,9 +1,10 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y apache2
-RUN apachectl stop
+
+CMD rm -r  var/www/html/index.html
 ADD new/  /var/www/html/
-RUN chmod 755 var/www/html/
+
 CMD apachectl -D FOREGROUND
 
 
