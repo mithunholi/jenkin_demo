@@ -1,5 +1,5 @@
 FROM ubuntu
-
+RUN apachectl stop
 RUN apt-get update && apt-get install -y apache2
 
 ADD new/  /var/www/html/
